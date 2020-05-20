@@ -31,7 +31,7 @@ const output = merge(
 // the latter will take precedence.
 const output = merge(
   { type: "i20", brand: "hyundai" },
-  { segment: "hatchback" }
+  { type: "verna" }
 );
 // output:
 // { type: "verna", brand: "hyundai" }
