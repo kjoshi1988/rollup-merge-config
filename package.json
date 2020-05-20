@@ -1,0 +1,45 @@
+{
+  "name": "rollup-merge-config",
+  "version": "0.0.1",
+  "description": "Module to merge multiple rollup configs",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "babel lib -d dist",
+    "test": "mocha tests/*.spec.js",
+    "lint": "eslint lib/ tests/ --cache",
+    "test:coverage": "istanbul cover node_modules/.bin/_mocha tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjoshi1988/rollup-merge-config.git"
+  },
+  "author": "Kapil Joshi <kjoshi1988@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "rollup",
+    "merge",
+    "extend",
+    "config"
+  ],
+  "bugs": {
+    "url": "https://github.com/kjoshi1988/rollup-merge-config/issues"
+  },
+  "homepage": "https://github.com/kjoshi1988/rollup-merge-config#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-plugin-lodash": "^3.3.4",
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^7.1.2"
+  }
+}
