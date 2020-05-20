@@ -2,8 +2,6 @@
 const assert = require('assert');
 const merge = require('..');
 
-const configKeys = ['output', 'external', 'plugins'];
-
 describe('Merge Test', () => {
   it('should append configs props', async () => {
     const cfg1 = {
