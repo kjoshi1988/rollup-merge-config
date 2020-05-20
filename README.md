@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/TechnionYP5777/project-name.png)](https://codecov.io/gh/kjoshi1988/rollup-merge-config) [![codecov](https://codecov.io/gh/kjoshi1988/rollup-merge-config/branch/master/graph/badge.svg)](https://codecov.io/gh/kjoshi1988/rollup-merge-config)
+[![Build Status](https://travis-ci.org/github/kjoshi1988/rollup-merge-config.svg)](https://travis-ci.org/github/kjoshi1988/rollup-merge-config) [![codecov](https://codecov.io/gh/kjoshi1988/rollup-merge-config/branch/master/graph/badge.svg)](https://codecov.io/gh/kjoshi1988/rollup-merge-config)
 
 # rollup-merge-config: extend configurations with ease.
 Rollup-merge-config provides `merge` and `extend` function that helps in merging/extending roll-up configs with ease.
