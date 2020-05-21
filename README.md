@@ -36,3 +36,60 @@ const output = merge(
 // output:
 // { type: "verna", brand: "hyundai" }
 ```
+
+### **`merge({ arrayCustomizer, objectCustomizer })(...configuration | [...configuration])`**
+
+`merge` behavior can be customized through a customization API.
+
+```javascript
+// Customizing array/object behavior
+const output = merge(
+  {
+    arrayCustomizer(a, b, key) {
+      if (key === 'bar') {
+        return _.uniq([...a, ...b]);
+      }
+
+      // Fall back to default merging
+      return undefined;
+    },
+    objectCustomizer(a, b, key) {
+      if (key === 'foo') {
+        // Custom merging
+        return _.merge({}, a, b);
+      }
+
+      // Fall back to default merging
+      return undefined;
+    }
+  }
+)(object1, object2, object3, ...);
+
+// Example
+//config1
+{
+    foo: ['obj1', 'obj2'],
+    bar: {name: 'obj1'}
+}
+
+//config2
+{
+    foo: ['obj2', 'obj3'],
+    bar: {name2: 'obj2'}
+}
+
+//merged output
+{
+  foo: ['obj1', 'obj2', 'obj3'],
+  bar: {name: 'obj1', name2: 'obj2'}
+}
+```
+
+In the above example, `arrayCustomizer` will be invoked for each property of `Array` type, i.e:
+```
+arrayCustomizer(['obj1', 'obj2'], ['obj2', 'obj3'], 'foo');
+```
+and `customizeObject` will be invoked for each property of `Object` type, i.e:
+```
+objectCustomizer({name: 'obj1'}, {name2: 'obj2'}, 'bar');
+```
