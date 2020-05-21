@@ -10,7 +10,7 @@
     "build": "babel lib -d dist",
     "test": "mocha tests/*.spec.js",
     "lint": "eslint lib/ tests/ --cache",
-    "test:coverage": "istanbul cover node_modules/.bin/_mocha tests/"
+    "test:coverage": "istanbul cover node_modules/.bin/_mocha tests/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -44,6 +44,12 @@
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.20.2",
     "istanbul": "^0.4.5",
-    "mocha": "^7.1.2"
-  }
+    "mocha": "^7.1.2",
+    "pre-push": "^0.1.1"
+  },
+  "pre-push": [
+    "lint",
+    "build",
+    "test"
+  ]
 }
