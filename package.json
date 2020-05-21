@@ -1,6 +1,6 @@
 {
   "name": "rollup-merge-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Module to merge multiple rollup configs",
   "main": "dist/index.js",
   "files": [
