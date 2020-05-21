@@ -89,7 +89,7 @@ In the above example, `arrayCustomizer` will be invoked for each property of `Ar
 ```
 arrayCustomizer(['obj1', 'obj2'], ['obj2', 'obj3'], 'foo');
 ```
-and `customizeObject` will be invoked for each property of `Object` type, i.e:
+and `objectCustomizer` will be invoked for each property of `Object` type, i.e:
 ```
 objectCustomizer({name: 'obj1'}, {name2: 'obj2'}, 'bar');
 ```
