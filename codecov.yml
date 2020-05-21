@@ -1,0 +1,2 @@
+fixes:
+  - "/.*/rollup-merge-config/dist::/rollup-merge-config/lib/"
