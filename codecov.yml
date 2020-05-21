@@ -1,2 +1,2 @@
 fixes:
-  - "/home/travis/build/kjoshi1988/rollup-merge-config/dist::/rollup-merge-config/lib/"
+  - "/.*/rollup-merge-config/dist::/rollup-merge-config/lib/"
