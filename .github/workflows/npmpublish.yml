@@ -16,10 +16,10 @@ jobs:
         node-version: 12
     - name: Install
       run: npm ci
-    - name: CheckStyle
-      run: npm run lint
     - name: Build
       run: npm run build
+    - name: CheckStyle
+      run: npm run lint
     - name: Test
       run: npm test
     - name: Publish
