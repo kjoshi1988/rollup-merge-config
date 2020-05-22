@@ -12,11 +12,11 @@
     "lint": "eslint lib/ tests/ --cache",
     "test:coverage": "istanbul cover node_modules/.bin/_mocha tests/*.spec.js"
   },
+  "author": "Kapil Joshi <kjoshi1988@gmail.com>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kjoshi1988/rollup-merge-config.git"
   },
-  "author": "Kapil Joshi <kjoshi1988@gmail.com>",
   "license": "MIT",
   "engines": {
     "node": ">=10.0.0",
